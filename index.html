@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Enjoy Your Trip</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="header__logo">
+                <p class="header__logo--text">
+                    EYT
+                </p>
             </div>
             <div class="header__wrap">
                 <form class="header__city">
                     <select name="select1">
-                        <option value="Київ">Київ</option>
+                        <option class="header__info--text" value="Київ">Київ</option>
                         <option value="Харків">Харків</option>
                         <option value="Одеса">Одеса</option>
                         <option value="Дніпро">Дніпро</option>
@@ -23,15 +27,20 @@
                 </form>
             </div>
             <div class="header__info">
-                email
-                тел
+                <p class="header__info--text">
+                Для туристів travel@joinup.ua (0800) 30 97 97
+                </p>
             </div>
-            <form class="lang">
-                <select name="select1">
-                    <option value="UK">UK</option>
-                    <option value="EN">EN</option>          
-                </select>
-            </form>
+            <div class="header__lang">
+                <form>
+                    <select name="select1">
+                        <option value="UK">UK</option>
+                        <option value="EN">EN</option>          
+                    </select>
+                </form>
+            </div>
+        </header>
+        <div class="menu">
             <ul class="nav">
                 <li class="nav__item">
                     Країна
@@ -51,15 +60,9 @@
                 </li>
                 <li class="nav__item">
                     Прес-Центр
-                    <ul class="menu_dropdown">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Новини</a>
-                            <a href="#" class="menu__link">Вважливо</a>
-                        </li>
-                    </ul>
                 </li>
             </ul>
-        </header>
+        </div>
     </div>
 </body>
 </html>
