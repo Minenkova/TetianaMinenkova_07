@@ -21,6 +21,7 @@ ul, ol {
 a {
     text-decoration: none;
 }
+
 .wrapper {
     position: fixed;
     top: 1%;
@@ -58,7 +59,6 @@ a {
     font-weight: 700;
     color: rgb(246, 249, 251); 
 }
-
 
 .header__wrap,
 .header__info,
@@ -136,4 +136,15 @@ div.header__info>p {
     width: 15%;
     padding-top: 40px;
     padding-left: 40px;
+}
+
+.footer {
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
