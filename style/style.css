@@ -7,18 +7,19 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 18px;
 }
 body {
     font-size: 1rem;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 ul, ol {
     list-style: none;
 }
 
-a {
+a { 
+    color: white;
     text-decoration: none;
 }
 
@@ -48,6 +49,7 @@ a {
     height: 95px;
     
 }
+
 .header__logo {
     width: 25%;
     height: 90px;
@@ -98,6 +100,7 @@ div.header__info>p {
     font-size: 1.2rem;
     cursor: pointer;
 }
+
 .nav__item:hover {
     background-color: rgb(122, 127, 169);
 }
@@ -123,6 +126,7 @@ div.header__info>p {
     font-size: 1.2rem;
     font-weight: 600;
 }
+
 .section {
     background-image: url(../images/main_background.jpg);
     background-size: 100%;
@@ -159,21 +163,32 @@ div.header__info>p {
 
 .content {
     display: flex;
+}
 
+.box,
+.box__primery,
+.box__country,
+.box__cuisine {
+    width: 25%;
+    height: 200px;
+    outline: 2px solid rgb(49, 35, 149);
+    background-size: cover;
 }
 
 .box {
-    width: 22%;
-    height: 200px;
-    outline: 2px solid rgb(49, 35, 149);
+    background-image: url(../images/church.jpg);
+
 }
 
-.box_primery {
-    width: 22%;
-    height: 200px;
-    outline: 2px solid rgb(49, 35, 149);
+.box__country {
+    background-image: url(../images/about_Georgia.jpg);
+}
+
+.box__primery {
     background-image: url(../images/culture.jpg);
-    background-size: cover;
+}
+.box__cuisine {
+    background-image:url(../images/cuisine.jpg);
 }
 
 .inner {
@@ -185,9 +200,23 @@ div.header__info>p {
     opacity: 0;
     text-align: center;
     line-height: 200px;
+    cursor: help ;
 }
 
-.box_primery:hover .inner {
+.box__cuisine:hover .inner,
+.box:hover .inner,
+.box__country:hover .inner, 
+.box__primery:hover .inner {
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 1;
+}
+
+.desc {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 90%;
+}
+
+.desk>p {
+    text-indent: 10px;
 }
